@@ -8,7 +8,7 @@ TBD
 
 ## References
 
-TBD
+- [A Guide to Low-Code Platforms](https://tomassetti.me/a-guide-to-low-code-platforms/)
 
 ## License
 
