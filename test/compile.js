@@ -25,3 +25,11 @@ exports['compile text and code'] = function (test) {
     test.equal(result({ name: 'Adam' }), 'hello, 1234');
 };
 
+exports['compile text and code skipping new line at end of code'] = function (test) {
+    const result = genco.compile('hello, <# for (let k = 1; k <= 4; k++) {#>\r\n${k}<# } #>');
+    
+    test.ok(result);
+    test.equal(typeof result, 'function');
+    test.equal(result({ name: 'Adam' }), 'hello, 1234');
+};
+
