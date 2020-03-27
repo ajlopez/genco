@@ -16,7 +16,7 @@
     "node": ">= 8.0.0"
   },
   "scripts": {
-    "test": "simpleunit ./test -r"
+    "test": "simpleunit ./test"
   },
   "dependencies": {
   },
