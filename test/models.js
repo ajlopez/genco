@@ -9,3 +9,11 @@ exports['set key value into empty model'] = function (test) {
     test.deepEqual(model, { name: 'Adam' });
 };
 
+exports['set key value into non-empty model'] = function (test) {
+    const model = { name: 'Adam' };
+    
+    models.set(model, 'age', 800);
+    
+    test.deepEqual(model, { name: 'Adam', age: 800 });
+};
+
