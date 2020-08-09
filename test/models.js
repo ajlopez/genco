@@ -17,3 +17,11 @@ exports['set key value into non-empty model'] = function (test) {
     test.deepEqual(model, { name: 'Adam', age: 800 });
 };
 
+exports['set composite key value into model'] = function (test) {
+    const model = { name: 'Adam' };
+    
+    models.set(model, 'wife.name', 'Eve');
+    
+    test.deepEqual(model, { name: 'Adam', wife: { name: 'Eve' } });
+};
+
