@@ -6,6 +6,10 @@ Code generator, WIP.
 
 TBD
 
+## Versions
+
+- 0.0.1: Initial version
+
 ## References
 
 - [A Guide to Low-Code Platforms](https://tomassetti.me/a-guide-to-low-code-platforms/)
